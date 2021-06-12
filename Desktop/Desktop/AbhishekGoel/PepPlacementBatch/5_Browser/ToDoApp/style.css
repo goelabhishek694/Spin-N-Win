@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5E9DD;
+    /* margin-bottom: 1rem; */
+}
+.input-container{
+    /* background-color: #F5E9DD; */
+    height:15vh;
+}
+.input{
+    height: 60%;
+    font-family: 'Zen Dots', cursive;
+    font-size:1.25rem;
+    display: block;
+    margin: 0 auto;
+    /* margin-top: 3vh; */
+    width:60vw;
+    border: 0.2rem solid  #BDC1AC;
+    
+}
+.task_container{
+    height: 85vh;
+    background-color: #BDC1AC;
+    font-family: 'Zen Dots', cursive;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.instructions{
+    padding-top: 1rem;
+    /* margin: 0; */
+    font-size: 1.5rem;
+}
+.task-list{
+    margin: 0 auto;
+    padding-left: 0;
+}
+.task{
+    list-style: none;
+    font-size: 1.25rem;
+    background-color: #E1E0D3;
+    width:60vw;
+    height:3.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 884px) {
+    .input{
+        width:30vw;
+    }
+   }

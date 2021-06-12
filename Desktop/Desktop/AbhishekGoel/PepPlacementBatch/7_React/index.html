@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>React</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        //functional component
+        // function Hello(){
+        //     return(
+        //         <h1>Hello</h1>
+        //     )
+        // }
+
+        // function Hello(props){
+        //     return(
+        //         <h1>Hello {props.name}</h1>
+        //     )
+        // }
+
+        // destructuring the props
+        function Hello({name="default",age="100"}){
+            return(
+                <h1>Hello {name}, Your age is {age}</h1>
+            )
+        }
+        function Hellos(){
+            return(
+                <React.Fragment>
+                    <Hello name="Abhishek" age="22" />
+                    <Hello name="Steve Rogers" age="70"/>
+                    <Hello age="25"/>
+                    <Hello/>
+                </React.Fragment>
+            )
+        }
+
+        ReactDOM.render(<Hellos/>,document.getElementById("root"));
+    </script>
+</body>
+</html>
